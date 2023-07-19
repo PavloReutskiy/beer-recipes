@@ -18,18 +18,20 @@ export const BeerRecipe = () => {
         <img src={beer.image_url} alt={beer.name} className="recipe-image" />
         <div className="recipe-info">
           <h1 className="recipe-title">{beer.name}</h1>
-          <p className="recipe-tagline">{beer.tagline}</p>
-          <p className="recipe-description">{beer.description}</p>
-          <p className="recipe-abv">Alcohol By Volume (ABV): {beer.abv}%</p>
-          <p className="recipe-ibu">
-            International Bitterness Units (IBU): {beer.ibu}
+          <em className="recipe-info-item recipe-tagline">"{beer.tagline}"</em>
+          <p className="recipe-info-item recipe-description">{beer.description}</p>
+          <p className="recipe-info-item recipe-abv">
+            <span className="titles">Alcohol By Volume (ABV):</span> {beer.abv}%</p>
+          <p className="recipe-info-item recipe-ibu">
+            <span className="titles">International Bitterness Units (IBU):</span> {beer.ibu}
           </p>
-          <p className="recipe-ebc">
-            European Brewery Convention (EBC): {beer.ebc}
+          <p className="recipe-info-item recipe-ebc">
+            <span className="titles">European Brewery Convention (EBC):</span> {beer.ebc}
           </p>
-          <p className="recipe-brewed">First Brewed: {beer.first_brewed}</p>
-          <p className="recipe-brewers-tips">
-            <strong>Brewers Tips:</strong> {beer.brewers_tips}
+          <p className="recipe-info-item recipe-brewed">
+            <span className="titles">First Brewed:</span> {beer.first_brewed}</p>
+          <p className="recipe-info-item recipe-brewers-tips">
+            <span className="titles">Brewers Tips:</span> {beer.brewers_tips}
           </p>
         </div>
       </div>

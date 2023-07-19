@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BeerItem } from "../BeerItem";
 import { useBeerStore } from "../../store/useBeerStore";
 import "./BeerList.scss";
@@ -7,11 +7,11 @@ export const BeerList = () => {
   const beers = useBeerStore((state) => state.beers);
   const displayedBeers = useBeerStore((state) => state.displayedBeers);
   const activeIds = useBeerStore((state) => state.activeIds);
-  const currentPage = useBeerStore((state) => state.currentPage);
-  const setBeers = useBeerStore((state) => state.setBeers);
+  // const currentPage = useBeerStore((state) => state.currentPage);
+  // const setBeers = useBeerStore((state) => state.setBeers);
   const updatedDisplayedBeers = useBeerStore((state) => state.updatedDisplayedBeers);
-  const setActiveIds = useBeerStore((state) => state.setActiveIds);
-  const setCurrentPage = useBeerStore((state) => state.setCurrentPage);
+  // const setActiveIds = useBeerStore((state) => state.setActiveIds);
+  // const setCurrentPage = useBeerStore((state) => state.setCurrentPage);
   const fetchBeers = useBeerStore((state) => state.fetchBeers);
   const toggleBeerActiveStatus = useBeerStore(
     (state) => state.toggleBeerActiveStatus

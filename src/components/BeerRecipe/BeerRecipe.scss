@@ -11,6 +11,29 @@
   margin: 0 auto;
 }
 
+.recipe-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
 .recipe-image {
   max-height: 700px;
+}
+
+.recipe-info-item {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.recipe-tagline {
+  display: block;
+  color: #742929;
+}
+
+.titles {
+  font-size: 1rem;
+}
+
+.recipe-description {
+  margin-bottom: 40px;
 }
