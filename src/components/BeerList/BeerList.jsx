@@ -5,7 +5,7 @@ import "./BeerList.scss";
 
 export const BeerList = () => {
   const beers = useBeerStore((state) => state.beers);
-  const displayedBeer = useBeerStore((state) => state.displayedBeer);
+  const displayedBeers = useBeerStore((state) => state.displayedBeers);
   const activeIds = useBeerStore((state) => state.activeIds);
   const currentPage = useBeerStore((state) => state.currentPage);
   const setBeers = useBeerStore((state) => state.setBeers);
@@ -25,7 +25,7 @@ export const BeerList = () => {
   }, [fetchBeers, beers]);
 
   useEffect(() => {
-    updatedDisplayedBeers()
+    updatedDisplayedBeers();
   }, [updatedDisplayedBeers, beers]);
 
   const handleRightClick = (event, id) => {
@@ -51,7 +51,7 @@ export const BeerList = () => {
           </button>
         )}
         <div className="beer-list">
-          {displayedBeer.map((beer) => (
+          {displayedBeers.map((beer) => (
             <BeerItem
               key={beer.id}
               beer={beer}

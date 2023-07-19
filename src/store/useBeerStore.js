@@ -3,7 +3,7 @@ import { getBeerRecipes, getBeerRecipe } from "../api/recipes";
 
 export const useBeerStore = create((set, get) => ({
   beers: [],
-  displayedBeer: [],
+  displayedBeers: [],
   beer: {},
   activeIds: [],
   currentPage: 1,
@@ -14,7 +14,7 @@ export const useBeerStore = create((set, get) => ({
   setBeer: (beer) => set({ beer }),
 
   updatedDisplayedBeers: () => {
-    set({ displayedBeer: get().beers.slice(0, 15) });
+    set({ displayedBeers: get().beers.slice(0, 15) });
   },
 
   fetchBeers: async () => {
