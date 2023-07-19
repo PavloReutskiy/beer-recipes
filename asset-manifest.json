@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3a319f5.css",
+    "main.js": "/static/js/main.e6d01030.js",
+    "static/media/118Z_2012.w018.n001.615B.p15.615.jpg": "/static/media/118Z_2012.w018.n001.615B.p15.615.c4cc8e4f2ba11149f1d3.jpg",
+    "static/media/glass-of-beer.png": "/static/media/glass-of-beer.0cee557c96e7f563e111.png",
+    "index.html": "/index.html",
+    "main.c3a319f5.css.map": "/static/css/main.c3a319f5.css.map",
+    "main.e6d01030.js.map": "/static/js/main.e6d01030.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3a319f5.css",
+    "static/js/main.e6d01030.js"
+  ]
+}
