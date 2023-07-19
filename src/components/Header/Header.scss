@@ -1,0 +1,22 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff7e4;
+
+  &__logo {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+}

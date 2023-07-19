@@ -1,0 +1,18 @@
+@import './styles/mixins';
+
+.app {
+  height: 100%;
+  background-image: url("./img/118Z_2012.w018.n001.615B.p15.615.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  background-color: #fff7e4;
+
+  @include onTablet {
+    max-width: 100%;
+  }
+}

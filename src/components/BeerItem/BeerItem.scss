@@ -1,0 +1,50 @@
+@import '../../styles/mixins';
+
+.beer-item {
+  flex: 0 1 40%;
+  min-width: 40%;
+  border: 1px solid rgba($color: #000, $alpha: 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  max-height: 500px;
+  transition: box-shadow .2s ease-in-out, border .2s ease-in-out;
+
+  @media (max-width: 824px) {
+    min-width: 45%;
+  }
+
+  @include onMobile {
+    min-width: 60%;
+  }
+
+  &:hover {
+    border: 1px solid rgba($color: #000, $alpha: 0.3);
+    box-shadow: 0px 3px 13px rgba(23, 32, 49, 0.4);;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    padding: 5px 0;
+    max-height: 70%;
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  &__tagline {
+    display: block;
+    margin-bottom: 10px;
+    color: #742929;
+  }
+}
+
+.beer-item.active {
+  background-color: #ddd;
+}

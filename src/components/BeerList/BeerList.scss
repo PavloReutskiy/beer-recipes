@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+
+.main {
+  height: 100%;
+}
+
+.beer-container {
+  max-width: 95%;
+  margin: auto;
+}
+
+.beer-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__delete {
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    position: fixed;
+    top: 3%;
+    right: 15%;
+    z-index: 2;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecc43d;
+    color: #333;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+    &:hover {
+      background-color: #c5a129;
+      color: #fff;
+    }
+
+    @include onMobile {
+      right: 5%;
+    }
+  }
+}
