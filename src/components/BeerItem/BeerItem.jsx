@@ -16,14 +16,18 @@ export const BeerItem = ({ beer, onHandleRightClick }) => {
       className={cn('beer-item', { 'active': beer.active})}
       onContextMenu={(event) => onHandleRightClick(event, beer.id)}
     >
-      <img 
-        src={beer.image_url} 
-        alt={beer.name} 
-        className="beer-item__img"
-      />
-      <p className="beer-item__name">{beer.name}</p>
-      <em className="beer-item__tagline">"{beer.tagline}"</em>
-      <p className="beer-item__data">First brewed: {formatDate(beer.first_brewed)}</p>
+      <div className="beer-item-content">
+        <img 
+          src={beer.image_url} 
+          alt={beer.name} 
+          className="beer-item__img"
+        />
+        <div className="beer-item-info">
+          <p className="beer-item__name">{beer.name}</p>
+          <em className="beer-item__tagline">"{beer.tagline}"</em>
+          <p className="beer-item__data">First brewed: {formatDate(beer.first_brewed)}</p>
+        </div>
+      </div>
     </Link>
   );
 };

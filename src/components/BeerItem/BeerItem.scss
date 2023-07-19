@@ -1,8 +1,19 @@
 @import '../../styles/mixins';
 
+.beer-item-content {
+ display: flex;
+ justify-content: space-around;
+ padding: 10px;
+ gap: 20px;
+}
+
+.beer-item-info {
+  justify-content: flex-start;
+  max-width: 50%;
+}
+
 .beer-item {
-  flex: 0 1 40%;
-  min-width: 40%;
+  flex: 0 1 900px;
   border: 1px solid rgba($color: #000, $alpha: 0.2);
   border-radius: 10px;
   padding: 10px;
@@ -11,14 +22,6 @@
   max-height: 500px;
   transition: box-shadow .2s ease-in-out, border .2s ease-in-out;
 
-  @media (max-width: 824px) {
-    min-width: 45%;
-  }
-
-  @include onMobile {
-    min-width: 60%;
-  }
-
   &:hover {
     border: 1px solid rgba($color: #000, $alpha: 0.3);
     box-shadow: 0px 3px 13px rgba(23, 32, 49, 0.4);;
@@ -26,9 +29,8 @@
 
   &__img {
     display: block;
-    margin: auto;
-    padding: 5px 0;
-    max-height: 70%;
+    max-height: 400px;
+    max-width: 30%;
     margin-bottom: 15px;
   }
 
@@ -36,12 +38,14 @@
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 10px;
+    word-wrap: wrap;
   }
 
   &__tagline {
     display: block;
     margin-bottom: 10px;
     color: #742929;
+    word-wrap: wrap;
   }
 }
 
