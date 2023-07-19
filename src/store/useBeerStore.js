@@ -7,10 +7,7 @@ export const useBeerStore = create((set, get) => ({
   beer: {},
   activeIds: [],
   currentPage: 1,
-  // setBeers: (beers) => set({ beers }),
   setDisplayedBeers: (displayedBeers) => set({ displayedBeers }),
-  // setActiveIds: (activeIds) => set({ activeIds }),
-  // setCurrentPage: (currentPage) => set({ currentPage }),
   setBeer: (beer) => set({ beer }),
 
   updatedDisplayedBeers: () => {
